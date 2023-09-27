@@ -1,0 +1,489 @@
+#container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: 2% 0;
+}
+
+.MainContent {
+  background-color: var(--div-color);
+  display: flex;
+  padding: 2%;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.BoxImg {
+  flex: 1;
+}
+
+.BoxImg img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.BoxDetail {
+  flex: 3;
+  padding: 0 1%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.BoxAverageCount {
+  display: flex;
+  align-items: center;
+}
+.BoxAverageCount a {
+  text-decoration: none;
+  font-style: italic;
+  color: whitesmoke;
+}
+.BoxAverageCount a:hover {
+  text-decoration: underline;
+}
+
+.countRating {
+  margin-left: 1%;
+}
+
+#productName {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#description {
+  font-size: 1.3rem;
+}
+
+#description p:nth-child(1) {
+  margin-bottom: 2%;
+}
+
+#description p:nth-child(2) {
+  font-style: italic;
+}
+
+.BoxPriceStockButton {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BoxPSB {
+  height: 50%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#price {
+  font-size: 2rem;
+  color: var(--price-color);
+}
+
+#stock {
+  font-size: 1.5rem;
+}
+
+/** Bouton Add Item */
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+  border-radius: 10px;
+}
+
+.button__icon {
+  border-radius: 10px;
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__text__connexion {
+  transform: translateX(8px) !important;
+}
+.button__link {
+  text-decoration: none;
+}
+.button__link i {
+  color: whitesmoke;
+}
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #34974d;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button:active {
+  border: 1px solid #2e8644;
+}
+
+/**  Section Commentaire et Réponse  */
+.CommentsContent {
+  width: 100%;
+  background-color: var(--div-color);
+  border-radius: 10px;
+  margin-top: 3%;
+  padding: 2%;
+  color: #fff;
+}
+
+.CommentsContent h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+.UserComment {
+  font-weight: bold;
+}
+#DeleleCommentOrResponse {
+  background-color: transparent;
+  border: none;
+  color: #c7161d;
+  font-style: italic;
+}
+#DeleleCommentOrResponse:hover {
+  text-decoration: underline;
+}
+/**  Commentaire */
+.BoxFormComments {
+  display: flex;
+  width: 50%;
+  margin-bottom: 2%;
+}
+
+#FormComments {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: end;
+}
+
+#FormComments textarea {
+  width: 100%;
+  resize: none;
+  height: 200px;
+  border-radius: 10px;
+  padding: 1% 1% 5%;
+  background-color: var(--input-color);
+  color: #fff;
+}
+
+#COMMENT_ERROR,
+#RESPONSE_ERROR {
+  width: 100%;
+  display: flex;
+  margin: 1% 0;
+  height: 35px;
+  align-items: center;
+  color: #ffa938;
+  justify-content: space-between;
+}
+
+#count {
+  color: #fff;
+}
+
+#FormComments > input {
+  width: 20%;
+  background-color: var(--button-color);
+  padding: 1%;
+  border-radius: 10px;
+  margin-top: 1%;
+  color: #fff;
+}
+
+#FormComments > input:hover {
+  background-color: var(--main-color) !important;
+  cursor: pointer;
+}
+
+.BoxComments {
+  background-color: var(--nav-color);
+  margin-bottom: 1%;
+  border-radius: 10px;
+  padding: 1%;
+  position: relative;
+}
+#commentDate,
+#responseDate {
+  font-size: 0.8em;
+}
+#comment {
+  margin: 1% 0;
+  word-break: break-word;
+}
+
+/**  Réponse */
+.BoxResponse {
+  background-color: var(--border-color);
+  border-radius: 10px;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.BoxFormResponses {
+  display: flex;
+  width: 50%;
+  margin-bottom: 2%;
+}
+.ClickResponse {
+  background-color: transparent;
+  font-style: italic;
+  border: none;
+  color: var(--button-color);
+}
+.ClickResponse:hover {
+  text-decoration: underline;
+}
+.FormResponses {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  align-items: end;
+}
+.FormResponses textarea {
+  width: 100%;
+  resize: none;
+  height: 100px;
+  border-radius: 10px;
+  padding: 1%;
+  background-color: var(--input-color);
+  color: #fff;
+}
+.FormResponses input {
+  width: 20%;
+  background-color: var(--button-color);
+  padding: 1%;
+  border-radius: 10px;
+  color: #fff;
+}
+.FormResponses input:hover {
+  background-color: var(--main-color) !important;
+  cursor: pointer;
+}
+.TextareaReponse {
+  width: 100%;
+  resize: none;
+  height: 100px;
+  border-radius: 10px;
+  padding: 1%;
+  background-color: var(--input-color);
+  color: #fff;
+}
+#response {
+  margin: 1% 0;
+  word-break: break-word;
+}
+.BoxSubmitResponse {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 2%;
+}
+/** Note étoiles  */
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 50px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+/** Affichage des étoiles sur les commentaires */
+.ShowRating {
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+
+.ShowRating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.ShowRating:not(:checked) > label {
+  float: right;
+  font-size: 40px;
+  color: #666;
+}
+
+.ShowRating:not(:checked) > label:before {
+  content: "★";
+}
+
+.ShowRating > input:checked ~ label {
+  color: #ffa723;
+}
+
+/** Affichage de la moyenne sous le titre */
+.AvgRating {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+.AvgRating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.AvgRating:not(:checked) > label {
+  float: right;
+  font-size: 40px;
+  color: #666;
+}
+
+.AvgRating:not(:checked) > label:before {
+  content: "★";
+}
+
+.AvgRating > input:checked ~ label {
+  color: #ffa723;
+}
+@media screen and (max-width: 1440px) {
+  .MainContent {
+    width: 100%;
+  }
+  #description p:nth-child(2) {
+    font-size: 1rem;
+  }
+  .BoxImg img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .BoxImg {
+    display: flex;
+    align-items: center;
+  }
+  .BoxImg img {
+    width: 150px;
+  }
+  .BoxFormComments {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .MainContent {
+    flex-direction: column;
+  }
+  .BoxImg {
+    justify-content: center;
+    margin: 2% 0;
+  }
+  .BoxImg img {
+    width: 250px;
+  }
+  .BoxPSB {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 2% 0;
+  }
+  #price {
+    font-size: 1.5rem;
+  }
+  #stock {
+    font-size: 1rem;
+  }
+  .BoxFormComments {
+    width: 100%;
+  }
+  .BoxFormResponses {
+    width: 70%;
+  }
+  .ShowRating:not(:checked) > label {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .BoxPSB {
+    flex-direction: column;
+  }
+  #stock {
+    margin: 2% 0;
+  }
+  .BoxFormResponses {
+    width: 100%;
+  }
+  .ShowRating {
+    position: initial;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+  }
+}

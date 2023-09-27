@@ -1,0 +1,350 @@
+#container {
+  width: 100%;
+  margin: 2% 0;
+}
+.ProfilContent {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  gap: 3%;
+  height: 630px;
+}
+
+/** Formulaire */
+
+.BoxProfil {
+  display: flex;
+  flex: 1;
+}
+#FormProfil {
+  background-color: var(--div-color);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+#FormProfil h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+  margin: 2% 0;
+}
+.FormChild {
+  width: 80%;
+  border-radius: 10px;
+  outline: none;
+  height: 50px;
+}
+#FormProfil label {
+  color: white;
+  display: flex;
+  align-items: end;
+  font-style: italic;
+}
+#FormProfil input {
+  padding: 2%;
+  background-color: var(--input-color);
+  color: #fff;
+}
+.BoxPassword {
+  display: flex;
+  position: relative;
+}
+#password {
+  width: 100%;
+  border-radius: 10px;
+  border-right: none;
+  outline: none;
+}
+#showPassword {
+  position: absolute;
+  background-color: transparent;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  color: #fff;
+}
+#message {
+  color: #ffa938;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+#submit {
+  background-color: var(--button-color) !important;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: var(--main-color) !important;
+}
+#LinkPassword {
+  margin: 3% 0;
+  color: var(--button-color);
+}
+/** Adresse  */
+
+.BoxAddress {
+  flex: 2;
+  background-color: var(--div-color);
+  border: 1px solid var(--border-color);
+  padding: 1%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.BoxAddress h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+  margin: 1% 0;
+}
+/** Ajouter une adresse  */
+.BoxAddAddress {
+  background-color: var(--nav-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  width: 40%;
+  color: #fff;
+  padding: 3px 0;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+#LinkAddAddress {
+  color: #fff;
+  text-decoration: none;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#LinkAddAddress:hover span {
+  text-decoration: underline;
+}
+#MaxAddress {
+  width: 100%;
+  text-align: center;
+}
+/** Liste des adresses  */
+.ListAddresses {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+.DetailAddress {
+  display: flex;
+  background-color: var(--nav-color);
+  border-radius: 10px;
+  width: 100%;
+  padding: 1%;
+  margin: 0 1% 1%;
+  color: #fff;
+  justify-content: space-between;
+}
+.InfoAddress {
+  flex: 3;
+}
+#name {
+  font-weight: bold;
+}
+.BoxButtons {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  align-items: center;
+}
+.ButtonAddress {
+  /* border-radius: 50px; */
+  background-color: transparent;
+  border: none;
+}
+.ButtonAddress i {
+  /* padding: 10px; */
+  color: #fff;
+  font-size: 1.5rem;
+}
+.ButtonAddress:hover i {
+  color: var(--button-color);
+}
+/** Scroll bar des adresses */
+/* width */
+.ListAddresses::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+.ListAddresses::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+/* Handle */
+.ListAddresses::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+/* Handle on hover */
+.ListAddresses::-webkit-scrollbar-thumb:hover {
+  background: var(--button-color);
+}
+
+/** Historique des commandes  */
+.containerCommand {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 2% 0 !important;
+}
+.allCommand {
+  /* overflow-y: scroll; */
+  width: 90%;
+  /* height: 50rem; */
+  background-color: var(--div-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1% 2%;
+}
+.allCommand h3 {
+  font-size: 1.3rem;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 2% 0;
+}
+.allCommand > div {
+  background-color: var(--nav-color);
+  border-radius: 10px;
+  padding: 1%;
+  margin: 1%;
+}
+.infoCommand {
+  display: flex;
+  background-color: var(--border-color);
+  color: #fff;
+  justify-content: space-between;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1%;
+}
+.infoCommand div {
+  text-align: center;
+}
+.infoCommand div:nth-child(1) {
+  text-align: start;
+}
+.command {
+  /* background-color: #005078; */
+  padding: 1% 0 !important;
+  display: flex;
+  color: #fff;
+  gap: 5%;
+}
+.command img {
+  width: 100px ;
+  border-radius: 20px;
+}
+.infoProduct {
+  /* display: flex; */
+  width: 100%;
+  /* justify-content: space-between; */
+}
+.titleProduct {
+  font-size: 1.5rem;
+}
+.price {
+  font-size: 1.2rem;
+}
+/* .infoProduct div {
+  width: 80%;
+} */
+.infoProduct a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+.infoProduct a:hover {
+  text-decoration: underline;
+  color: var(--button-color);
+}
+/* .infoProduct a button {
+  border-radius: 20px;
+  padding: 4% ;
+  cursor: pointer;
+} */
+
+.showCommands {
+  border: 1px solid var(--border-color);
+  width: 40%;
+}
+.showCommands a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+}
+.showCommandsText {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .ProfilContent {
+    flex-direction: column;
+    height: auto;
+  }
+  .BoxProfil {
+    margin-bottom: 3%;
+  }
+  .BoxAddAddress {
+    width: 50%;
+  }
+  .titleProduct {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ProfilContent {
+    width: 100%;
+  }
+  .allCommand {
+    width: 100%;
+  }
+  .BoxAddress h3 {
+    margin: 2% 0;
+  }
+  .command img {
+    height: auto;
+  }
+  .showCommands {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .FormChild {
+    width: 100%;
+  }
+  .BoxAddAddress {
+    width: 100%;
+    margin: 0;
+  }
+  .allCommand {
+    padding: 1% 0;
+  }
+  .allCommand > div {
+    margin: 1% 0;
+  }
+  .infoCommand {
+    font-size: 0.8rem;
+  }
+  .price {
+    font-size: 1rem;
+  }.showCommands {
+    width: 90%;
+  }
+}
